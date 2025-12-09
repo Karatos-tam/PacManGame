@@ -58,6 +58,14 @@ public class PacMan implements GameObject {
         futureDy = 0;
         futureDx = speed;
     }
+    public void keyLeft(){
+        futureDy = 0;
+        futureDx = -speed;
+    }
+    public void keyUp(){
+        futureDy = -speed;
+        futureDx = 0;
+    }
 
     private boolean isOnGrid(){
         return x%gridSize == 0 && y%gridSize == 0;
