@@ -35,18 +35,12 @@ public class GamePanel extends JPanel implements KeyListener, ActionListener {
     @Override
     public void keyPressed(KeyEvent e) {
         switch(e.getKeyCode()) {
-            case KeyEvent.VK_UP: {
-                pacMan.keyUp();
-                break;
-            }
+            case KeyEvent.VK_UP: break;
             case KeyEvent.VK_DOWN: {
                 pacMan.keyDown();
                 break;
             }
-            case KeyEvent.VK_LEFT: {
-                pacMan.keyLeft();
-                break;
-            }
+            case KeyEvent.VK_LEFT: break;
             case KeyEvent.VK_RIGHT: {
                 pacMan.keyRight();
                 break;
